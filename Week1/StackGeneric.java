@@ -70,7 +70,7 @@ class MyPet {
 
 public class StackGeneric
 {
-    public static void main( String[] arg){
+    public static void main( String[] args){
         Stack <Integer> s = new Stack <Integer>();
         
         System.out.println("Stack is created\n");

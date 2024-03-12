@@ -74,7 +74,7 @@ class Stack {
 
 public class StackTest
 {
-    public static void main( String[] arg){
+    public static void main( String[] arg) throws StackException{
         Stack s = new Stack();
         System.out.println("Stack is created\n");
         
@@ -90,9 +90,9 @@ public class StackTest
         
         System.out.println("Stack sixe is " + s.size());
        
-       /* int i = s.pop();
+        int i = s.pop();
         System.out.println("Just popped " + i);
         s.display();
-        */
+       
     }
 }
