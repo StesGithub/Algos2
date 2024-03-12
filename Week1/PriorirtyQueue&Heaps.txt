@@ -1,0 +1,46 @@
+Implementing a PQ in three ways
+
+    Implementing a PQ in three ways
+     
+                        insert()    remove()
+     - Sorted Array        O(n)     O(1)
+     - Unsorted Array      O(1)     O(n)
+     - Heap                O(logn)  O(logn)
+
+
+
+    Because heap tree is complete, i.e no gaps
+    It is easy to locate children and parent
+    For Heap node at position i:
+
+        position_index(i) = i/2;
+        lchild_index(i) = 2i;
+        rchild_index(i) = 2i+1;
+
+
+    *Heap from notes*
+        inset("p");
+        siftUp();
+        *While loop to traverse the tree*
+
+
+    *Heap pseudocode*
+
+        Heap size n, heap array a[]
+            insert(x)
+                a[++n] = x 
+                siftUp(n)
+
+
+        siftUp(int k)
+            v = a[k]
+            a[0] = *infinity*
+            while(v > a[k/2])
+                a[k] = a[k/2]
+                k = k/2
+            a[k] = v
+
+
+
+
+
