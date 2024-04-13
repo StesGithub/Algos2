@@ -51,7 +51,7 @@ class GraphMatrix {
             wgt = Integer.parseInt(parts[2]);
 
             System.out.println("Edge " + toChar(u) + "--(" + wgt + ")--" + toChar(v));
-            // missing code
+            adj[u][v] = wgt;
 
         }
     }
@@ -103,6 +103,16 @@ class GraphMatrix {
 
         // process all the vertices u connected to vertex v
         // lots of missing code
+        for(u = 1; u<= v; u++){
+           if(adj[v][u] !=0 && colour[u] == C.White){
+            parent[u] = v;
+            dfVisit(u);
+           }
+           
+        }
+        colour[v] = C.Black;
+        ++time;
+        f[v] = time;
     }
 
     public void BF(int s) {
@@ -118,7 +128,7 @@ class GraphMatrix {
 
         g.display();
 
-        // g.DF(s);
+        g.DF(s);
 
         // g.BF(s);
 
