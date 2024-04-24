@@ -127,7 +127,7 @@ class Heap
 
     public void heap_sort()
     {
-        int temp; // placehgolder for later
+        int temp; // placeholder for later
 
         // Build a max heap from the array
         for (int i = (current_heap_size / 2); i > 0; i--)
@@ -135,7 +135,7 @@ class Heap
             siftDown(i);
         }
 
-        // Swsap the root with the last element, then reduce the heap size by 1
+        // Swap the root with the last element, then reduce the heap size by 1
         // and call siftDown on the root to keep the max heap
         for (int i = current_heap_size; i > 1; i--)
         {

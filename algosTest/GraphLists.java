@@ -38,7 +38,7 @@ public class GraphLists {
         The_Graph.prim(vert_to_do);
 
         System.out.println("\n\n-----------------------------\nDijikstra");
-        The_Graph.djiskra(vert_to_do);
+        The_Graph.dijkstra(vert_to_do);
     }
 }
 
@@ -420,7 +420,7 @@ class Graph {
         System.out.printf("%-13s: [%s]\n", name, Arrays.toString(arr).replaceAll("[\\[\\]]", ""));
     }
 
-    public void djiskra(int vert_to_do) {
+    public void dijkstra(int vert_to_do) {
         int small;
         int vertex;
         int[] visited = new int[vertex_size + 1];
